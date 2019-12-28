@@ -18,8 +18,11 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.0",
     "chai": "^4.2.0",
+    "discord.js": "^11.5.1",
     "mocha": "^6.2.2",
+    "sinon": "^8.0.1",
     "ts-node": "^8.5.4",
+    "ts-sinon": "^1.0.24",
     "typescript": "^3.7.4"
   }
 }
