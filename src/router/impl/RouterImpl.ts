@@ -42,15 +42,13 @@ export class RouterImpl implements Router {
     registerAction (action: string, actionHandler: Function | undefined) {
         if (actionHandler !== undefined) {
             if (!this.actions.has(action)) {
-                console.log(`registering route ${action}`)
-
                 this.actions.set(action, actionHandler)
             }
         }
     }
 
     start () {
-        this.client.on('message', this.routeMessage)
+        this.client.on('message', this.routeMessage(this.client))
     }
 
     get Actions (): Map<string, Function> {
