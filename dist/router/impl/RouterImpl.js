@@ -38,13 +38,12 @@ var RouterImpl = /** @class */ (function () {
     RouterImpl.prototype.registerAction = function (action, actionHandler) {
         if (actionHandler !== undefined) {
             if (!this.actions.has(action)) {
-                console.log("registering route " + action);
                 this.actions.set(action, actionHandler);
             }
         }
     };
     RouterImpl.prototype.start = function () {
-        this.client.on('message', this.routeMessage);
+        this.client.on('message', this.routeMessage(this.client));
     };
     Object.defineProperty(RouterImpl.prototype, "Actions", {
         get: function () {
