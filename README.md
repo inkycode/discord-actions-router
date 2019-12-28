@@ -11,7 +11,7 @@ A node.js module for parsing discord messages and evoking action handlers
 2. Implement logging
 3. Create sample project
 4. Publish the module to NPM
-    a. Think about publish/build process
+  * Think about publish/build process
 
 ## Developer instructions
 The following instructions assume you already have git and node.js (built using v12.0.0) installed
