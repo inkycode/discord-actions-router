@@ -7,10 +7,11 @@ A node.js module for parsing discord messages and evoking action handlers
 3. Start the router ```myRouter.start()```
 
 ## ToDo
-1. Fix the Action decorator for proper usage
-2. Implement logging
-3. Create sample project
-4. Publish the module to NPM
+1. Add non-prefixed message handling (global actions)
+2. Fix the Action decorator for proper usage
+3. Implement logging
+4. Create sample project
+5. Publish the module to NPM
     * Think about publish/build process
 
 ## Developer instructions
