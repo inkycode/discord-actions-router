@@ -1,4 +1,4 @@
-# Discord actions router ![build status](https://travis-ci.com/inkycode/discord-actions-router.svg?branch=master)
+# Discord actions router [![build status](https://travis-ci.com/inkycode/discord-actions-router.svg?branch=master)](https://travis-ci.com/inkycode/discord-actions-router)
 A node.js module for parsing discord messages and evoking action handlers
 
 ## Basic usage
