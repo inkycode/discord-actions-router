@@ -8,3 +8,10 @@ before_script:
 
 script:
     - npm run test
+
+after_success:
+    - git config --global user.email "builds@travis-ci.com"
+    - git config --global user.name "Travis CI"
+    - export GIT_TAG=v0.1.0-$TRAVIS_BUILD_NUMBER
+    - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
+    - git push origin $GIT_TAG
