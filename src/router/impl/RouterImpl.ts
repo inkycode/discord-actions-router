@@ -39,11 +39,9 @@ export class RouterImpl implements Router {
         this.prefix = prefix
     }
 
-    registerAction (action: string, actionHandler: Function | undefined) {
-        if (actionHandler !== undefined) {
-            if (!this.actions.has(action)) {
-                this.actions.set(action, actionHandler)
-            }
+    registerAction (action: string, actionHandler: Function) {
+        if (!this.actions.has(action)) {
+            this.actions.set(action, actionHandler)
         }
     }
 
